@@ -159,43 +159,64 @@ img {
   background-color: #f3f3f7;
 }
 
-.sponsorship p {
+.sponsorship-intro,
+.sponsorship .note {
   line-height: 1.6;
   font-size: 0.95rem;
   margin: 0 0 1.25rem;
 }
 
-.sponsorship table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
+.sponsorship-intro {
+  max-width: 900px;
 }
 
-.sponsorship th,
-.sponsorship td {
+.sponsorship-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.sponsorship-card {
+  background: #fff;
   border: 1px solid #ddd;
-  padding: 0.75rem;
-  text-align: left;
-  vertical-align: top;
+  border-top: 4px solid #800020;
+  border-radius: 0.75rem;
+  padding: 1.1rem 1.1rem 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 }
 
-.sponsorship th {
-  background-color: #800020;
-  color: #fff;
+.sponsorship-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+  color: #800020;
 }
 
-.sponsorship tr:nth-child(even) td {
-  background-color: #fafafa;
-}
-
-.sponsorship-level {
+.tier-range {
+  margin: 0 0 0.9rem;
+  color: #555;
   font-weight: 600;
+}
+
+.sponsorship-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.sponsorship-card li + li {
+  margin-top: 0.55rem;
 }
 
 .sponsorship .note {
   margin-top: 1rem;
   font-size: 0.9rem;
   color: #555;
+}
+
+@media (max-width: 800px) {
+  .sponsorship-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Contact */

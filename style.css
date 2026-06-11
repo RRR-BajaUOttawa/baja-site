@@ -213,6 +213,26 @@ img {
   color: #555;
 }
 
+.sponsorship-actions {
+  margin-top: 1rem;
+}
+
+.sponsorship-button {
+  display: inline-block;
+  padding: 0.7rem 1.35rem;
+  border-radius: 999px;
+  background-color: #800020;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+}
+
+.sponsorship-button:hover {
+  opacity: 0.92;
+}
+
 @media (max-width: 800px) {
   .sponsorship-grid {
     grid-template-columns: 1fr;
